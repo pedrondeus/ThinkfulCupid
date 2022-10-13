@@ -1,0 +1,299 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  /* font-size: 26px; */
+  font-size: 150%;
+  font-weight: 400;
+  /* margin: 0 10px 15px 10px; */
+  margin: 0% 2% 4% 2%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 120%;
+  font-weight: 500;
+}
+
+h4 {
+  text-align: center;
+  font-size: 150%;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 1%;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  max-width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin:2%;
+}
+
+.item-double {
+  flex: 2;
+}
+
+img {
+  display: flex;
+  flex-direction: column;
+}
+
+.group img {
+  width: 100%;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #83092e;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 400%;
+  color: #ecdbc9;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Join Form ------- */
+.join-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+}
+
+.down-img {
+  flex: 50%;
+}
+
+.field-wrapper {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.input-join-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color:#fff;
+  background:#6b1a22;
+  border: none;
+}
+
+/* -------  About ------- */
+#about .about-imgs {
+  padding: 2%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 5%;
+}
+
+
+
+
+/* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+   /* -------  Join Form ------- */
+
+  #join .group {
+    width: fit-content;
+    display: flex;
+  }
+
+  #join  .down-img {
+    width: 50%;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .down-img img {
+    align-self: center;
+  }
+
+  .join-input {
+    width: 50%;
+    font-size: 80%;
+  }
+  
+  /* -------  Join Form Square------- */
+
+ .input-join-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.join-input {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inside-field-wrapper {
+  width: 65%;
+  align-self: center;
+  margin-bottom: 22%;
+}
+
+
+button {
+  width: 100%;
+  height: 150%;
+  font-size: 20px;
+  color:#fff;
+  background:#6b1a22;
+  border: none;
+} */
+
+
+ /* -------  About ------- */
+
+#about .title {
+  height: 15px;
+  width: 100%
+}
+
+#about .group {
+  flex-direction: column;
+}
+
+.about-content {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+#about .about-imgs {
+  width: 25%;
+}
+
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+}
+  
+  /* -------  Download ------- */
+  #download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+  }
+
+  .down-txt-container {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  #download img {
+    width: 50%;
+  }
+
+
+
+  /* -------  Blog ------- */
+  #blog .group {
+    flex-direction: column;
+  }
+
+  #blog .blog-wrap{
+    display: flex;
+  }
+ 
+}
+
+/* @media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+} */
